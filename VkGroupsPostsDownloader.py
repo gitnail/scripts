@@ -21,7 +21,7 @@ def main():
     count_ = vk.wall.get(owner_id = -group)['count']
     k = 0
     cur = 0
-    f = open('allposts.txt', 'w')
+    f = open('allposts.txt', 'w+')
     f.write('Количество постов = ' + str(count_) + '\n\n')
     fnames = {}
     lnames = {}
