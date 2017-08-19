@@ -17,7 +17,8 @@ def main():
     
     vk = vk_session.get_api()
     gList = vk.groups.get()
-    group = gList['items'][0]
+    g_id = int(input('Enter the group number in your group list:')) - 1
+    group = gList['items'][g_id]
     count_ = vk.wall.get(owner_id = -group)['count']
     k = 0
     cur = 0
